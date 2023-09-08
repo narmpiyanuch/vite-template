@@ -20,3 +20,16 @@ button {
   border: 1px solid;
   cursor: pointer;
 }
+
+a {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.friend {
+  padding: 10px 30px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
