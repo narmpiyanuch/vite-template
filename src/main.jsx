@@ -1,7 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import Button from '@mui/material/Button';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <div>Vite React Template</div>
-);
+function App() {
+  return <div>
+    <Button variant='text'>Button</Button>
+    <Button variant='contained' >Button</Button>
+    <Button variant='contained' disabled>Button</Button>
+    <Button variant='outlined'>Button</Button>
+
+    <Button variant='contained' color='primary'>Button</Button>
+    <Button variant='contained' color='secondary'>Button</Button>
+    <Button variant='contained' color='success'>Button</Button>
+    <Button variant='contained' color='error' onClick={() => alert('Error')}>Button</Button>
+
+  </div>;
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
