@@ -13,7 +13,14 @@ function App() {
     <Button variant='contained' color='primary'>Button</Button>
     <Button variant='contained' color='secondary'>Button</Button>
     <Button variant='contained' color='success'>Button</Button>
-    <Button variant='contained' color='error' onClick={() => alert('Error')}>Button</Button>
+    <Button
+      variant='contained'
+      color='error'
+      onClick={() => alert('Error')}
+      sx={{ padding: '10px', marginTop: '20px', borderRadius: '10px' }}
+    >
+      Button
+    </Button>
 
   </div>;
 }
