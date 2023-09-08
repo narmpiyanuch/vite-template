@@ -109,14 +109,14 @@ ReactDOM.createRoot(document.getElementById('root'))
   .render(
     <BrowserRouter>
       <Routes>
-        {/* Parent */}
+        {/* Parent : Layout*/}
         <Route path='/' element={<AppLayout />} >
+          {/* Child : <Outlet /> */}
           <Route path='' element={<HomePage />} />
           <Route path='profile' element={<ProfilePage />} />
           <Route path='profile/:userId' element={<FriendPage />} />
           <Route path='feed' element={<FeedPage />} />
           <Route path='*' element={<Navigate to='/' />} />
-          {/* Child */}
         </Route>
       </Routes>
     </BrowserRouter>
